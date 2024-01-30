@@ -55,7 +55,7 @@ class Product(models.Model):
         return self.name
 
  
-class Variaction(models.Model):
+class Variation(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     name = models.CharField(max_length=50, blank= True, null=True)
     price = models.FloatField()
